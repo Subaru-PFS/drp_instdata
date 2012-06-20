@@ -1,0 +1,62 @@
+                The SuMIRe Sensitivity Files
+                    Jeg 10/11/09
+
+There are three sensitivity files in this package:
+
+sumireBLUE.dat
+sumireRED.dat
+sumireIR.dat
+
+They correspond to the blue, red and IR channels described by
+the file sumiresetup.txt, which gives the spectroscopic parameters
+for the three channels.
+
+They give pixel-based data on object sensitivity and sky flux
+assuming the wavelength ranges displayed in the header, from
+Lamlo to Lamhi (Angstroms). Neff is the effective number of lines
+in the grating, assumed here to be about a third of the total real
+number of lines; this parameter is necessary to calculate the 
+wing scattering of the OH lines (see the text description of the 
+sky files, skyHRFiles.txt, for a full description). Rcen is the resolving
+power at the center of the range, assuming that the FWHM is set
+by the fiber footprint. Rpix is the central *pixel* resolving power, just
+lam/(dlam) where dlam is the wavelength range represented by
+one pixel. The ratio of these is just the FWHM in pixels. Npix is
+4096, the assumed pixel number in the detector, and dlam is as
+described above.
+
+The next table is the percentage of the pixels in which the sky
+is fainter than the indicated AB magnitude, in three contiguous
+wavelength bands for each channel; the boundaries are at the
+head of the table. So for example, in sumireBLUE.dat, 65 percent
+of pixels are fainter than 22.13 in the range 3800-4766, 22.18 in
+the range 4766-5733, and 21.50 in the range 5733-6700.
+
+The main table gives, for each pixel, the wavelength of the pixel, the
+sky flux density in nanoMaggies per square arcsecond (The unit of flux
+density in all these tables is the nanoMaggie.  One maggie is the AB
+flux of a 0.0 mag AB object, 3631 Janskys or 3.361e-20 erg/sec/cm^2/Hz,
+so a nanoMaggie is 3.361e-29 erg/sec/cm^2/Hz, or 3.631 microJanskys.  A
+source of AB=22.50 has a flux density of 1 nanoMaggie.), the equivalent
+AB magnitude (just -2.5*log10(flux density in Maggies)), the total
+throughput of the instrument/telescope, the total throughput of the
+instrument/telescope/atmosphere, the detected photon count per
+*kilo*second of exposure for a 1 nanoMaggie source, the count per
+kilosecond from the sky, and the S/N of a 1 nM source in 1000 sec of
+exposure.  These S/Ns are for a 1-pixel *WIDE* piece of the spectrum;
+the fiber image is more than 3 pixels *HIGH*, and the read noise
+(assumed 3 electrons for the CCDs, 4 for the IR device) is properly
+included.  The noise-equivalent height of the spectrum is 3.5 pixels, so
+the read noise contribution is the pixel read noise times sqrt(3.5). 
+
+Note that the area of a 1.13" (100 micron fiber) at the Subaru
+focal plane is almost exactly 1 square arcsecond, so you can think about
+these fluxes as fiber fluxes.
+
+To reach the resolution of the instrument, typically several
+pixels are averaged together, and to reach reasonable resolution for
+continuum studes of galaxies, for example, *many* pixels are averaged
+together; R=500 to 1000 are reasonable, My next task is to produce
+tables of sensitivity at various resolutions, taking into accout the sky
+variance in the proper way. 
+
