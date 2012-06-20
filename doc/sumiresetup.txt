@@ -1,0 +1,50 @@
+    Grating Characteristics, Sumire PFS
+        Jim Gunn, 2011 Jan 26
+
+BLUE Setup:
+Beamsize 250mm, 262mm camera efl, f/1.05 Range = 0.380u to 0.670u
+1.130 arcsec fibers (0.100mm)
+Central Resolving Power = 2380 at 0.525u
+Fiber f/ratio = 2.86  Fiber taper = 1.279:1 Input fiber dia = 100.4u
+Collimator efl = 625.1mm, f/2.50, Sfibsize = 128.4u, ResEl = 46.7u
+Detector side, diagonal = 61.4mm, 86.9mm, Pixel = 0.0150mm, (4096 pixels)
+Field = 0.3310R = 18.97deg; half-field in disp direction = 0.1170R = 6.71deg
+Fiber slit height = 146.3mm
+Fiber footprint = 0.0539mm, spacing 0.800 diameters, Nfib = 633
+FSR0 = 0.291u, grating half-angle = 11.9deg,  Pitch = 786.1g/mm, Length=255mm
+Spectral Range:lamlo = 0.3800u, lamhi = 0.6700u, FSR=0.2900u
+
+Lambda: 0.3800 0.4163 0.4525 0.4888 0.5250 0.5613 0.5975 0.6337 0.6700
+ResPwr:   1675   1845   2018   2194   2371   2550   2732   2916   3102
+
+RED Setup:
+Beamsize 250mm, 262mm camera efl, f/1.05 Range = 0.650u to 1.000u
+1.130 arcsec fibers (0.100mm)
+Central Resolving Power = 3099 at 0.825u
+Fiber f/ratio = 2.86  Fiber taper = 1.279:1 Input fiber dia = 100.4u
+Collimator efl = 625.1mm, f/2.50, Sfibsize = 128.4u, ResEl = 46.7u
+Detector side, diagonal = 61.4mm, 86.9mm, Pixel = 0.0150mm, (4096 pixels)
+Field = 0.3310R = 18.97deg; half-field in disp direction = 0.1170R = 6.71deg
+Fiber slit height = 146.3mm
+Fiber footprint = 0.0539mm, spacing 0.800 diameters, Nfib = 633
+FSR0 = 0.352u, grating half-angle = 15.4deg,  Pitch = 641.9g/mm, Length=259mm
+Spectral Range:lamlo = 0.6500u, lamhi = 1.0000u, FSR=0.3500u
+
+Lambda: 0.6500 0.6937 0.7375 0.7812 0.8250 0.8688 0.9125 0.9563 1.0000
+ResPwr:   2356   2534   2716   2900   3087   3277   3470   3666   3865
+
+IR Setup:
+Beamsize 250mm, 262mm camera efl, f/1.05 Range = 0.970u to 1.300u
+1.130 arcsec fibers (0.100mm)
+Central Resolving Power = 4522 at 1.135u
+Fiber f/ratio = 2.86  Fiber taper = 1.279:1 Input fiber dia = 100.4u
+Collimator efl = 625.1mm, f/2.50, Sfibsize = 128.4u, ResEl = 46.7u
+Detector side, diagonal = 61.4mm, 86.9mm, Pixel = 0.0150mm, (4096 pixels)
+Field = 0.3310R = 18.97deg; half-field in disp direction = 0.1170R = 6.71deg
+Fiber slit height = 146.3mm
+Fiber footprint = 0.0539mm, spacing 0.800 diameters, Nfib = 633
+FSR0 = 0.331u, grating half-angle = 21.9deg,  Pitch = 655.3g/mm, Length=269mm
+Spectral Range:lamlo = 0.9700u, lamhi = 1.3000u, FSR=0.3300u
+
+Lambda: 0.9700 1.0112 1.0525 1.0937 1.1350 1.1762 1.2175 1.2587 1.3000
+ResPwr:   3675   3875   4079   4288   4502   4721   4945   5175   5410
