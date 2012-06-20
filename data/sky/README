@@ -1,0 +1,22 @@
+
+This package contains files to help compute sensitivies, etc, for the
+SuMIRe PFS spectrograph. There are 4 text files which explain what
+is in the files:
+
+sumireTP.txt  explains the data for computing the throughput
+
+sumiresetup.txt  explains the assumed spectroscopic setup; gratings,
+    angles, resolving power, etc.
+
+sensitivityFiles.txt explains the files in which you will find 
+    throughputs, sky brightness, extinction, and crude sensitivity numbers.
+
+skyHRfiles.txt explains how the sky brightness was generated.
+
+It is assumed that you have or can write code to generate functions or
+at least interpolate in ascii tables, though the sensitivity files
+sumireCOLOR.dat give values for every pixel. The headers and comments
+for all of the data files are marked by a '\' in column 1, which is
+a comment character in Forth. You can change this to a '#' or ';' or
+whatever your code needs. The tables are equally spaced in wavelength
+for almost all the files (but are NOT in sumireTP.dat; careful).

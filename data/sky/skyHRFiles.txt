@@ -1,0 +1,70 @@
+        The High-Resolution Sky Files
+            Jeg 10/11/09
+
+There are three large files in this package, 
+
+sumireBLUEskyHR.dat
+sumireREDskyHR.dat
+sumireIRskyHR.dat
+
+which give the sky brightness as a function of wavelength in nanoMaggies
+per square arcsecond.  (read the file sensitivityFiles.txt.  One
+nanoMaggie is 3.631 microJanskys, 3.631e-29 erg/sec/cm^2/Hz, the flux
+density of a source with AB=22.50).  The resolution in all these tables
+is 0.2 Angstrom.  They were constructed from a variety of sources,
+including the Gemini models longward of 9000A, the ESO high resolution
+data files shortward of 10500.  Neither of these sources is without
+problems.  The Gemini files used an atmospheric model, which appears to
+be quite good for the emission line intensity, but they added in
+zodiacal light as the continuum, and got the intensity wrong (too high)
+by a factor of 10.  I fixed this crudely, but a better job needs to be
+done.  The ESO data are very noisy in the blue and clearly contain a LOT
+of moonlight, which I have also tried to subtract out, but a better job
+needs to be done.  I tested my corrections by comparing with broad-band
+sky brightness measures, and the tables (or, rather, the master table
+from which they are extracted) correspond to (in magnitudes per sq.
+arcsecond) 
+
+    AB      Standard
+            Vega
+U   23.0    22.2
+B   22.3    22.5
+V   21.6    21.6
+Rc  21.0    20.8
+Ic  20.2    19.8
+J   16.5    15.7
+H   14.7    13.4
+
+These agree well with the solar-cycle averaged values from many sources.
+The range is approximately these values +/-0.4 magnitude over the 
+solar cycle.
+
+So the first column is the wavelength in Angstrom units, the second the
+areal flux density in nM per sq arcsecond at full resolution with no
+scattering from the grating. 
+
+In the third column I have added the Lorenzian wings of the OH lines,
+computed by the prescription in Ellis and Bland-Hawthorn (2009)
+(Astro-ph 0801.3870) from Woods et al, (1994) Applied Optics 33, 4273. 
+One of the parameters which enters (inversely) in the strength of the
+wings is the effective number of lines in the grating, which is always
+less than the total real number and is smaller the lower the quality of
+the grating.  Modern VPH gratings have of order a third of the total
+number for this parameter, and that is what I have assumed here.  The
+third column, fl, is the result of applying this scattering convolution. 
+Note that the data shortward of 9000A is real data taken with a real
+spectrograph, so in some sense the scattering is already there; the ESO
+spectrograph, however, is of very high resolving power, and *probably*
+has scattering which can be neglected in comparison to what we are
+introducing.  (The continuum, however, in those data in the
+long-wavelength region, even after subtracting the moon, are a factor of
+about two higher than in the model Gemini data; this needs
+investigating. 
+
+Finally, one has to put in the finite resolution of the Sumire
+spectrograph; this is in the fourth column flg, which is the result of
+convolving fl with a gaussian of the proper FWHM for the spectrograph. 
+It is this column which is integrated over the pixels which appears in
+the sensitivity files.  The fifth and sixth columns just convert the
+flux densities in the fl and flg files to AB magnitudes per square
+arcsecond.  
