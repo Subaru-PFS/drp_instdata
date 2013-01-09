@@ -1,0 +1,11 @@
+This is the relevant observed and reduced ISAAC data used for the
+Rousselot, Lidman, et al. paper (2000A&A...354.1134R). I think it is
+available from various sources, but this was sent to JEG by Chris
+Lidman in 2012-09. The original data cover up to ~2.25AA, but I am not
+including any of the files which do not overlap the PFS range.
+
+http://adsabs.harvard.edu/abs/2000A%26A...354.1134R
+
+Note that the O2 lines at the start of the 1.2AA O2 band are
+identified in the paper.
+
