@@ -1,0 +1,19 @@
+spectra.fits 
+	contains a 37720 x 308 array containing 308 spectra in units of ergs s^-1 cm^-2 arsec^-2 ang^-1.
+
+wv_ang.fits
+	defines the wavelengths of the 37720 bins.
+
+expinfo.fits 
+	contains a 10 x 308 array; the 10-element dimension contains the following parameters for each of the 308 spectra:
+
+1. moon-object angle
+2. moon altitude
+3. moon phase (0=new, 1.0=full)
+4. sun-object angle
+5. ecliptic declination
+6. airmass
+7. exposure time
+8. heliocentric velocity (the sky spectra are in Earth's frame) 
+9. julian date
+10. azimuth of observation
