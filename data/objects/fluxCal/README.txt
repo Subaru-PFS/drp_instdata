@@ -1,11 +1,17 @@
 Stellar spectra intended for use as in-field flux standards
 ===========================================================
 
-Provided by Masayuki Tanaka, who writes:
+The AMBRE model templates whose wavelength was extrapolated
+to 1300 nm with an exponential function. See PIPE2D-364 for
+the details.
 
-> I am not sure how many spectra you need, but I put Teff=6500, 7000, 7500K
-> spectra with Z=0 and -1.  File names are in this format:
->
+* Templates
+Six templates with Teff = 6500, 7000, 7500K and Z = 0, -1. 
+
+* File name
+The file names follows ones of the previous version but they
+have a suffix of "_Extp". The previous naming rule is as 
+follows.
 > > Spectrum files are named as follows:
 > > p2500:g+3.5:m0.0:t01:z+0.00:a+0.00.AMBRE
 > > where
@@ -16,14 +22,8 @@ Provided by Masayuki Tanaka, who writes:
 > > 't0.1' : microturbulence velocity adopted in the MARCS model atmosphere and the spectral synthesis (in km/s)
 > > 'z+0.00' : mean stellar metallicity (equivalent to [Metal/H] or [Fe/H])
 > > 'a+0.00' : [alpha/Fe] chemical index
->
-> In the fits files,
->
-> > 1- wavelength (in \AA)
-> > 2- relative flux (normalized to the local continuum)
-> > 3- absolute flux (in erg/cm^2/s/A)
->
-> Use the columns 1 and 3, and scale the fluxes to the input magnitudes
-> to the simulator.  The spectra are of high resolution (R~15000), and
-> so you want to smooth them to the PFS resolution.
 
+* FITS
+Only flux density (nJy) is stored. 
+Use CRPIX1, CRVAL, CDELT in FITS header for wavelength solution.
+Pixel scale is 0.01 nm/pix.
