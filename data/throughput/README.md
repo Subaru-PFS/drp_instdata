@@ -3,10 +3,10 @@
 This directory `throughput` contains the following files:
 
 * README.md (this file) : some explanation
-* pfs_thr_20151204_ext_all_blu.dat : transmission curve of blue arm
-* pfs_thr_20151204_ext_all_red.dat : transmission curve of red arm
-* pfs_thr_20151204_ext_all_nir.dat : transmission curve of NIR arm
-* pfs_thr_20151204_ext_all_mid.dat : transmission curve of red arm in medium resolution (MR) mode
+* pfs_thr_20201231_ext_all_blu.dat : transmission curve of blue arm
+* pfs_thr_20201231_ext_all_red.dat : transmission curve of red arm
+* pfs_thr_20201231_ext_all_nir.dat : transmission curve of NIR arm
+* pfs_thr_20201231_ext_all_mid.dat : transmission curve of red arm in medium resolution (MR) mode
 
 They are *roughly* consistent with the current throughput model in the `spt_ExposureTimeCalculator`.
 
