@@ -1,0 +1,3 @@
+- catId: 1
+  description: GE z<2 galaxy spectra built on the COSMOS catalog. Galaxies only
+  rel_location: lowz_COSMOS
