@@ -7,6 +7,6 @@ bias = 100
 # 2.8), and this gain is removed from the system gain on read.
 # In the simulator, we set W_H4GAIN=1. This avoids having to change the pixel
 # values, but should have the correct effect.
-gain = 9.0
-readNoise = 20.0
+gain = 9.05
+readNoise = 13
 interCcdGap = 0.0
